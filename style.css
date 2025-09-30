@@ -1,0 +1,179 @@
+/* Hero */
+.hero {
+  background: #004080; /* darker blue */
+  color: white;
+  padding: 100px 20px;
+}
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.hero p {
+  color: #d0d8e0; /* softer gray-blue */
+  font-size: 20px;
+}
+
+/* Section spacing */
+section {
+  padding: 60px 20px;
+}
+.navbar-nav .nav-link:hover {
+  color: #004080;
+  font-weight: bold;
+}
+
+/* Process (Steps) */
+/* Process Section (3 Boxes Layout) */
+.process {
+  background: #f4f9ff; /* light blue background */
+  padding: 60px 20px;
+  text-align: center;
+}
+.process h2 {
+  color: #004080;
+  margin-bottom: 40px;
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.box {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  flex: 1 1 100%;  
+  max-width: 100%;
+  transition: transform 0.2s;
+}
+.box h3 {
+  color: #004080;
+  margin-bottom: 10px;
+}
+.box:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive Layout*/
+@media (min-width: 481px) and (max-width: 768px) {
+  .box {
+    flex: 1 1 45%;  
+    max-width: 45%;
+  }
+}
+@media (min-width: 769px) {
+  .box {
+    flex: 1 1 30%;  
+    max-width: 30%;
+  }
+}
+
+
+/* About TEOS */
+#about {
+  background: #e6f0ff; /* gentle blue background */
+  padding: 80px 20px;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 1000px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+#about h2 {
+  color: #004080;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+#about p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Products */
+#products h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.product-card {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.product-card img {
+  max-width: 100%;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+}
+
+/* Dishes */
+.dish-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s;
+}
+.dish-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+.dish-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact form */
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, 
+form textarea {
+  width: 100%;          
+  box-sizing: border-box; 
+  margin-top: 5px;
+  margin-bottom: 15px;
+  display: block;       
+}
+form textarea {
+  min-height: 100px;    
+  resize: vertical;   
+}
+
+
+/* Footer */
+footer {
+  background: #00264d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive layout for Process section */
+@media (max-width: 480px) {
+  h1 { font-size: 24px; }
+  p { font-size: 14px; }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  h1 { font-size: 32px; }
+  p { font-size: 16px; }
+}
+@media (min-width: 769px) {
+  h1 { font-size: 48px; }
+  p { font-size: 20px; }
+}
+
